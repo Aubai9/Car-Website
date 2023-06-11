@@ -1,0 +1,988 @@
+body {
+    background-color: #212529dc;
+}
+
+/* Navbar Section Strart */
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+    padding-left: 50px;
+}
+
+.navbar-brand::first-letter {
+    font-weight: 900;
+    font-size: 1.5em;
+    color: rgb(252, 0, 0);
+}
+
+.navbar-nav {
+    padding-right: 20px;
+}
+
+.navbar .active {
+    border-radius: 5px;
+    background-color: rgb(252, 0, 0);
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+    border-radius: 5px;
+    background-color: rgb(252, 0, 0);
+    transition: 0.3s;
+}
+
+.navbar .btn {
+    background-color: rgb(252, 0, 0);
+    width: 80px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.navbar .btn:hover {
+    background-color: #727272;
+    transition: 0.3s;
+}
+
+.toggle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background-color: #212529;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid rgb(252, 0, 0);
+}
+
+.toggle span {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(252, 0, 0);
+    transition: 0.5s;
+}
+
+.toggle:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+
+.s {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+
+.s.open {
+    transform: translateY(0);
+}
+
+.s .close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: indianred;
+    border: 2px solid indianred;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.s .close:hover {
+    background-color: rgb(0 0 0 / 50%);
+    transition: 0.5s;
+}
+
+.s a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80px;
+    transition: 0.5s;
+}
+
+.s a:hover {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/* Header Section Start  */
+.header {
+    padding: 100px;
+}
+
+.header .row {
+    position: relative;
+    margin-top: 100px;
+}
+
+.header .col-sm-7 img {
+    transform: scale(1.3);
+    margin-left: 100px;
+}
+
+.header .text-section h3 {
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.header .text-section::first-letter {
+    font-weight: 800;
+    font-size: 55px;
+    color: red;
+    margin-bottom: 50px;
+}
+
+.header .text-section p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.header .text-section .btn {
+    width: 100px;
+    border-radius: 5px;
+    background-color: red;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px;
+}
+
+.header .text-section .btn:hover {
+    background-color: #727272;
+    transition: 0.3s;
+}
+
+/* Header Section End  */
+
+/* popular cars Section Start  */
+
+.popular {
+    margin: 50px auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.content .link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content .link:hover {
+    background-color: rgb(252, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.popular .row {
+    margin-bottom: 50px;
+}
+
+.popular .box {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 10px #212529;
+    transition: 0.3s;
+}
+
+.popular .box:hover {
+    background-color: #212529;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.popular .box:hover h3 {
+    color: #fff;
+}
+
+.popular .box h3 {
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* popular cars Section End  */
+
+/* offer cars Section start  */
+.offer {}
+
+.content4 {
+    margin-top: 200px;
+}
+
+.content4 h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.content4 h2:hover {
+    color: rgb(252, 0, 0);
+    transition: 0.3s;
+}
+
+.card {
+    background-color: #212529;
+}
+
+.btn-feat2 {
+    background-color: rgb(252, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    z-index: 11111;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-feat2:hover {
+    background-color: #727272;
+    transition: 0.3s;
+}
+
+
+/* offer cars Section End  */
+
+/* Latest cars Section Start  */
+.latestCar {
+    margin-top: 200px;
+}
+
+.latestCar .box {
+    background-color: #212529;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    margin: 20px;
+}
+
+.latestCar .box:hover {
+    background-color: #191b1d;
+    transition: 0.3s;
+}
+
+.latestCar h3 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.box-content h2 {
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+}
+
+.box-content p {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box-content .btn {
+    background-color: rgb(252, 0, 0);
+    color: #fff;
+    font-weight: 700;
+}
+
+.box-content .btn:hover {
+    background-color: #727272;
+    transition: 0.3s;
+}
+
+/* Latest cars Section End  */
+
+/* car parts Section Start  */
+
+.car-parts {
+    margin-top: 200px;
+}
+
+.car-parts .container h1 {
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    bottom: 150px;
+    margin-bottom: 50px;
+}
+
+.car-parts .container h1:hover {
+    color: rgb(252, 0, 0);
+    transition: 0.3s;
+}
+
+.car-parts .carousel-item .box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.active h3 {
+    color: #fff;
+    padding-left: 200px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.active p {
+    color: #aaa;
+    padding-left: 200px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* car parts Section end  */
+
+/* lastNewsSection Start  */
+.last-news {
+    margin-top: 200px;
+}
+
+.last-news h2 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.last-news .box {
+    background-color: #212529;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    margin: 20px;
+}
+
+.last-news .box:hover {
+    background-color: #191b1d;
+    transition: 0.3s;
+}
+
+.last-news .box h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.last-news .box p {
+    color: #fff;
+    text-align: center;
+}
+
+/* lastNewsSection end  */
+/* text start  */
+.text {
+    margin-top: 200px;
+}
+
+.text .content h2 {
+    padding: 10px;
+}
+
+.text .col-sm-4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.text .col-sm-4 .box {
+    box-shadow: 10px 10px 10px #212529;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.text .col-sm-4 .box:hover {
+    background-color: #191b1d;
+    transition: 0.3s;
+}
+
+.text .box p {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+.text .col-sm-4 .box2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text .col-sm-4 .img-fluid {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+/* text end  */
+/* Footer Strat  */
+footer {
+    background-color: #212529;
+    margin-top: 200px;
+    text-align: center;
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font: 30px bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #aaa;
+}
+
+/* Footer Strat  */
+
+/* Add Some Feats */
+html::-webkit-scrollbar-thumb {
+    background: rgb(235, 92, 92);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(252, 0, 0);
+
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #212529;
+}
+
+/* About-Html */
+
+.about-html {
+    margin-top: 200px;
+    padding: 30px;
+}
+
+.about-html h1 {
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-html .col-sm-5 p {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.about-html .col-sm-5 .sp::first-letter {
+    color: rgb(252, 0, 0);
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.about-html .col-sm-5 .btn {
+    color: #fff;
+    background-color: rgb(252, 0, 0);
+    font-weight: bold;
+}
+
+.about-html .col-sm-5 .btn:hover {
+    background-color: #212529;
+    transition: 0.3s;
+}
+
+.about-html .col-sm-5 .img-fluid {
+    transform: translateY(50px);
+}
+
+
+/* Contact-html */
+
+.sign {
+    margin-top: 100px;
+}
+
+.sign h1 {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+
+.sign .form-group input {
+    margin-bottom: 20px;
+}
+
+.sign .form-group label {
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sign .btn {
+    background-color: rgb(252, 0, 0);
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.sign .btn:hover {
+    background-color: #212529;
+    transition: 0.3s;
+}
+
+.sign .form-group input {
+    background: none;
+    outline: none;
+    color: #fff;
+}
+
+.sign .form-group textarea {
+    background: none;
+    color: #fff;
+    outline: none;
+}
+
+.sign .form-group input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.sign .form-group textarea::placeholder {
+    opacity: 0.5;
+    color: #fff;
+}
+
+.sign .form-group {
+    position: relative;
+}
+
+.sign .form-group .img-fluid {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    z-index: 222;
+}
+
+/* Services Section  */
+
+.buy {
+    margin-top: 200px;
+}
+
+.buy .offset-sm-2 h2 {
+    color: #fff;
+    font-weight: 900;
+}
+
+.buy .offset-sm-2 p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.buy .offset-sm-2 .btn {
+    color: #fff;
+    font-weight: 700;
+    background-color: rgb(252, 0, 0);
+}
+
+.buy .offset-sm-2 .btn:hover {
+    background-color: #212529;
+    transition: 0.3s;
+}
+
+.modal-body .btn {
+    margin: 20px auto;
+    color: #fff;
+    background-color: rgb(252, 0, 0);
+    font-weight: 600;
+}
+
+.modal-body .btn:hover {
+    background-color: #727272;
+    transition: 0.3s;
+}
+
+.modal-body .col-sm-5 img {
+    margin-top: 40px;
+    transform: scale(1.6);
+}
+
+/* Start MediaQuery */
+
+/*--------------Contact section Start-------------- */
+
+
+@media (max-width: 480px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .sign h1 {
+        color: #fff;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+
+    .sign .col-sm-5 .img-fluid {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .sign .col-sm-7 .form-group .pic {
+        position: absolute;
+        top: 57%;
+        right: 7%;
+        transform: translate(64%, 0);
+    }
+
+    .toggle {
+        margin-right: -55px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .navbar .nav-item .nav-link {
+        display: none;
+    }
+
+    .navbar .nav-item .btn {
+        display: block;
+    }
+
+    .sign h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .toggle {
+        position: absolute;
+        right: 30%;
+    }
+}
+
+
+@media (min-width: 921px) {
+    section {
+        margin-top: 150px;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+/*--------------Contact section End-------------- */
+
+
+/*--------------services section Start-------------- */
+
+
+@media (max-width: 480px) {
+    .toggle {
+        margin-right: -55px;
+    }
+
+    .cont-pic {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+    }
+
+    .modal-body .btn {
+        margin: 20px 10px;
+        color: #fff;
+        background-color: rgb(252, 0, 0);
+        font-weight: 600;
+        position: relative;
+        left: 45px;
+        width: 100px;
+    }
+
+    .text-center {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .toggle {
+        position: absolute;
+        right: 30%;
+    }
+
+    .offset-sm-2 {
+        margin-left: 0;
+    }
+
+    .navbar .nav-item .btn {
+        display: block;
+        margin-bottom: -10px;
+    }
+}
+
+
+
+@media (min-width: 921px) {
+    .toggle {
+        display: none;
+    }
+}
+
+/*--------------services section End-------------- */
+
+/*--------------About section Start-------------- */
+
+
+@media (max-width: 480px) {
+    .toggle {
+        margin-right: -55px;
+    }
+
+    .text-center {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .toggle {
+        position: absolute;
+        right: 30%;
+    }
+}
+
+@media (min-width: 921px) {
+    .toggle {
+        display: none;
+    }
+}
+
+/*--------------About section End-------------- */
+
+/*--------------Home section Start-------------- */
+
+@media (max-width: 480px) {
+    .toggle {
+        margin-right: -55px;
+    }
+
+    .header .text-section h3 {
+        font-weight: 700;
+        font-size: 1em;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .header .text-section p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .header .text-section .btn {
+        width: 100px;
+        border-radius: 5px;
+        background-color: red;
+        font-weight: 700;
+        color: #fff;
+        margin-right: 0;
+    }
+
+    .header .col-sm-7 img {
+        transform: scale(2);
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .popular .box {
+        cursor: pointer;
+        margin-top: 50px;
+        width: ;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 10px 10px 10px 10px #212529;
+        transition: 0.3s;
+    }
+
+    .btn-feat2 {
+        background-color: rgb(252, 0, 0);
+        color: #fff;
+        font-weight: bold;
+        z-index: 11111;
+        position: absolute;
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .active h3 {
+        color: #fff;
+        text-align: center;
+        padding-left: 0;
+        font-weight: 800;
+    }
+
+    .active p {
+        color: #aaa;
+        padding-left: 0;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .text .col-sm-4 .box {
+        box-shadow: 10px 10px 10px #212529;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid black;
+        margin-bottom: 25px;
+    }
+
+    .button-section {
+        display: flex;
+    }
+}
+
+@media (max-width: 920px) {
+    .toggle {
+        position: absolute;
+        right: 30%;
+    }
+
+    .header .text-section h3 {
+        font-weight: 700;
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .header .text-section p {
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .button-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .col-sm-7 img {
+        transform: scale(1.4);
+        margin-left: 0;
+    }
+
+    .popular .row {
+        margin-bottom: 50px;
+        margin-left: 60px;
+    }
+
+    .latestCar .box {
+        background-color: #212529;
+        text-align: center;
+        padding: 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        color: #fff;
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .text .col-sm-4 .img-fluid {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 921px) {
+    .toggle {
+        display: none;
+    }
+}
+
+/*--------------Home section End-------------- */

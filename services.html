@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Services</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <a href="" class="navbar-brand">Car Website</a>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link btn" href="">Sell-</a></li>
+                    <li class="nav-item"><a class="nav-link btn" href="">Buy+</a></li>
+                </ul>
+            </div> <span class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <div class="s">
+                <span class="close">X</span>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+        <section>
+            <div class="container buy">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="car4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="offset-sm-2 col-sm-5">
+                        <div class="cont-pic">
+                            <img src="icons8-star-48.png" alt="">
+                            <img src="icons8-star-48.png" alt="">
+                            <img src="icons8-star-48.png" alt="">
+                            <img src="icons8-star-48.png" alt="">
+                            <img src="icons8-star-48.png" alt="">
+                        </div>
+                        <h2>#1 On Trending</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem placeat enim autem
+                            dolore aut.
+                            Unde, ex quas culpa dolorum nemo reiciendis itaque, iure, voluptate corrupti magnam delectus
+                            fugiat officiis.
+                            Ipsam pariatur expedita quod! Maxime magnam exercitationem explicabo deserunt nulla
+                            molestias! <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem dolore
+                            blanditiis temporibus laborum, laudantium eius culpa,
+                            sunt dolores consequuntur id architecto doloremque neque! Deleniti excepturi quasi
+                            necessitatibus ad nam!
+                        </p>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centerred">
+                <div class="modal-content">
+
+                    <div class="modal-body" style="background-color: #fff; border-radius: 10px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <img src="car4.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <button class="btn">Google
+                                    </button>
+                                    <span class="text-center" style="font-weight: 700;">Or</span>
+                                    <button class="btn">Store
+                                    </button>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Email</label>
+                                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                                            <div class="form-group">
+                                                <label for="" class="font-weight-bold">password</label>
+                                                <input type="password" class="form-control"
+                                                    placeholder="Enter Your password">
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            // @ts-nocheck
+            let toggle = document.querySelector(".toggle");
+            let nav = document.querySelector(".s");
+            let close = document.querySelector(".close");
+
+            toggle.onclick = function () {
+                nav.classList.add("open")
+            }
+            close.onclick = function () {
+                this.parentElement.classList.remove("open");
+            }
+
+            document.onkeyup = function (el) {
+                if (el.key === "Escape") {
+                    nav.classList.remove("open");
+                }
+            }
+        </script>
+        <script src="js/jquery-3.7.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/popper.min.js"></script>
+    </body>
+
+</html>

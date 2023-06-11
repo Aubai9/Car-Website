@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <title>About</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <a href="" class="navbar-brand">Car Website</a>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link btn" href="">Sell-</a></li>
+                    <li class="nav-item"><a class="nav-link btn" href="">Buy+</a></li>
+                </ul>
+            </div> <span class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <div class="s">
+                <span class="close">X</span>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="about-html container">
+            <h1>Why Chooose Us?</h1>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="car4.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-5">
+                    <p class="sp">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, nulla voluptate explicabo
+                        ex
+                        maiores vel eos est facilis quo labore cum iste eligendi asperiores et porro deserunt officia,
+                        ad
+                        ea.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus facere vero reiciendis
+                        laboriosam nulla numquam rerum pariatur voluptatum tempora ipsa corporis alias, recusandae, unde
+                        quia maxime reprehenderit suscipit asperiores autem!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam cupiditate amet saepe
+                        minima rerum eos dolorem alias ipsam. Id qui atque voluptatibus incidunt voluptatum voluptates
+                        recusandae ut eos aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                        accusantium nesciunt consequuntur fugit dolores incidunt perferendis architecto commodi saepe.
+                    </p>
+                    <button class="btn">Susbcribe</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            // @ts-nocheck
+            let toggle = document.querySelector(".toggle");
+            let nav = document.querySelector(".s");
+            let close = document.querySelector(".close");
+
+            toggle.onclick = function () {
+                nav.classList.add("open")
+            }
+            close.onclick = function () {
+                this.parentElement.classList.remove("open");
+            }
+
+            document.onkeyup = function (el) {
+                if (el.key === "Escape") {
+                    nav.classList.remove("open");
+                }
+            }
+        </script>
+        <script src="js/jquery-3.7.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/popper.min.js"></script>
+    </body>
+
+</html>
